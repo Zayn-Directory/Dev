@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Taylor Sin Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Taylor Sin Calculator</h1>
+        <p>Calculate the sine</p>
+        
+        <div class="input-group">
+            <label for="xValue">Enter value of x (in radians):</label>
+            <input type="number" id="xValue" step="any" placeholder="e.g., 1.5708 (π/2)">
+        </div>
+
+        <div class="input-group">
+            <label for="terms">Number of terms (higher = more accurate):</label>
+            <input type="number" id="terms" value="100" min="1" max="100">
+        </div>
+
+        <button onclick="calculateSine()">Calculate Sine</button>
+
+        <div id="result" class="result">
+            <h3>Result:</h3>
+            <p><strong>Taylor Series Result:</strong> <span id="taylorResult"></span></p>
+        </div>
+    </div>
+
+    <script src="Taylor_Series.js"></script> 
+</body>
+</html>
